@@ -4,6 +4,9 @@ export interface Project {
   description: string;
 }
 
-export interface ProjectListProps {
-  projects: Project[];
+export interface Task {
+  id: number;
+  projectId: number;
+  name: string;
+  status: "To Do" | "In Progress" | "Completed";
 }
